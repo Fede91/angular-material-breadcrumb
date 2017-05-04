@@ -1,0 +1,45 @@
+.md-bc,
+.md-bc::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.md-bc .md-bc-path {
+    float:left;
+}
+
+.md-bc .md-bc-home {
+    min-width: auto !important;
+    margin: 5px 3px !important;
+}
+
+.md-bc .md-bc-nav,
+.md-bc .md-bc-active-path {
+    min-width: auto !important;
+    padding: 0px 3px !important;
+    margin: 6px 3px !important;
+}
+
+.md-bc .md-bc-path .md-bc-active-path {
+    display: inline-block;
+    min-height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-grid-row-align: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    color: rgba(0,0,0,0.87);
+}
+
+md-toolbar md-breadcrumb {
+    color: rgba(255,255,255,0.87);
+}

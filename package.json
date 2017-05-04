@@ -1,0 +1,43 @@
+{
+  "name": "angular-material-breadcrumb",
+  "version": "1.0.0",
+  "description": "Light angularJS directive that generate a material design breadcrumb in base of the ui-router supporting HTML5 mode.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fede91/angular-material-breadcrumb"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "breadcrumb",
+    "breadcrumbs",
+    "ui-router",
+    "material",
+    "design",
+    "HTML5",
+    "html5"
+  ],
+  "author": {
+    "name": "Fede91",
+    "email": "github@federicobagato.it"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "connect-modrewrite": "^0.10.1",
+    "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-rename": "^0.2.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "serve-static": "^1.12.2"
+  }
+}
