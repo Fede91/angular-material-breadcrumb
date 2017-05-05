@@ -1,0 +1,43 @@
+<section class="examples-container">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-breadcrumb minify="minify" show-current="currentElement"></md-breadcrumb>
+        </div>
+    </md-toolbar>
+    
+    <h1 class="md-display-1">Breadcrumb examples</h1>
+
+    <md-button class="md-raised md-primary" ng-click="navigate()">Add Sub-Level</md-button>
+
+    <div layout="column">
+        <div flex ng-repeat="example in examples">
+            <md-card>
+                <md-card-title>
+                    <md-card-title-text>
+                        <div layout="row" layout-align="space-between center">
+                            <div layout="column">
+                                <span class="md-headline">{{example.title}}</span>
+                                <span class="md-subhead">{{example.subhead}}</span>
+                            </div>
+                            <div layout="row">
+                                <md-switch ng-model="example.showCode">View code</md-switch>
+                                <md-switch ng-model="example.simulateToolbar">Simulate toolbar</md-switch>
+                            </div>
+                        </div>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content layout="column">
+                    <div ng-class="{'md-toolbar-dummy' : example.simulateToolbar}">
+                        <md-breadcrumb minify="example.options.minify" show-current="example.options.showCurrent"></md-breadcrumb>
+                    </div>
+                    <div ng-if="example.showCode">
+                        <pre><code>{{example.code}}</code></pre>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+
+    
+</section>
+

@@ -1,0 +1,91 @@
+<section class="home-container">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+        </div>
+    </md-toolbar>
+
+    <div layout="column" layout-align="start center">
+
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-display-2">Angular Material Breadcrumb</span>
+                    <span class="md-subhead">Breadcrumb in Material Design</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content layout="column">
+                <p>Angular Material Breadcrumb is a module for AngularJS, which generates a material design breadcrumb in base of the ui-router supporting HTML5 mode.</p>
+                <div layout="column" layout-align="center center">
+                    <md-button class="md-raised md-primary" ng-click="goToExamples()">Explore the examples</md-button>
+                </div>
+                
+                <div class="md-display-1">Requirements</div>
+
+                <p>Angular Material Breadcrumb require these components:</p>
+
+                <ul>
+                    <li>AngularJS</li>
+                    <li>Angular Route</li>
+                    <li>Angular Material</li>
+                    <li>Google Material Icons</li>
+                </ul>
+                <div>You can include these dependencies directly in your html page by loading the libraries from the Google CDN:</div>
+<pre><code>&lt;!--Angular Material Breadcrumb requires Angular.js and Angular-Material Libraries --&gt;
+&lt;script src="http:&frasl;&frasl;ajax.googleapis.com&frasl;ajax&frasl;libs&frasl;angularjs&frasl;1.5.5&frasl;angular.min.js"&gt;&lt;&frasl;script&gt;
+&lt;script src="http:&frasl;&frasl;ajax.googleapis.com&frasl;ajax&frasl;libs&frasl;angularjs&frasl;1.5.5&frasl;angular-animate.min.js"&gt;&lt;&frasl;script&gt;
+&lt;script src="http:&frasl;&frasl;ajax.googleapis.com&frasl;ajax&frasl;libs&frasl;angularjs&frasl;1.5.5&frasl;angular-aria.min.js"&gt;&lt;&frasl;script&gt;
+&lt;script src="http:&frasl;&frasl;ajax.googleapis.com&frasl;ajax&frasl;libs&frasl;angularjs&frasl;1.5.5&frasl;angular-messages.min.js"&gt;&lt;&frasl;script&gt;
+&lt;script src="http:&frasl;&frasl;ajax.googleapis.com&frasl;ajax&frasl;libs&frasl;angular_material&frasl;1.1.0&frasl;angular-material.min.js"&gt;&lt;&frasl;script&gt;
+</code></pre>
+                <div>
+                    Or, if you are using NPM, you can include these dependencies on your package.json:
+                </div>
+<pre><code>"devDependencies": {
+    "angular": "&#94;1.5.5",
+    "angular-animate": "&#94;1.5.5",
+    "angular-aria": "&#94;1.5.5",
+    "angular-messages": "&#94;1.5.5",
+    "angular-route": "&#94;1.5.5",
+    "angular-material": "&#94;1.1.0"
+}
+</code></pre>
+                <div>
+                    And install it.
+                </div>
+                <p>
+                    Finally, load Google Material Icons by adding this snippet in your CSS file:
+                </p>
+<pre><code>&#64;import url(https:&frasl;&frasl;fonts.googleapis.com&frasl;icon&#63;family=Material+Icons);
+      
+&#64;font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https:&frasl;&frasl;fonts.gstatic.com&frasl;s&frasl;materialicons&frasl;v21&frasl;2f
+crYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+</code></pre>
+                
+                <div class="md-display-1">Angular Material Breadcrumb Installation</div>
+
+                <p>To install ad use Angular Material Breadcrumb in your Angular application, you can add Angular Material Breadcrumb's files to your project and include these in your html page (remember to change the angular module in the directive angular-material-breadcrumb.js):</p>
+
+<pre><code>...
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="[...]md-breadcrumb&frasl;angular-material-breadcrumb.min.css"&gt;
+&lt;&frasl;head&gt;
+&lt;body&gt;
+    ...
+    &lt;script src="[...]md-breadcrumb&frasl;angular-material-breadcrumb.min.js">&lt;&frasl;script&gt;
+    ...
+&lt;&frasl;body&gt;
+</code></pre>
+                <p>Finally, use the directive on your pages:</p>
+<pre><code>&lt;md-breadcrumb minify="false" show-current="false"&gt;&lt;&frasl;md-breadcrumb&gt;
+</code></pre> 
+                <div>View the examples to know how setup the parameter required by the breadcrumb.</div>
+            </md-card-content>
+        </md-card>
+    </div>
+</section>
+

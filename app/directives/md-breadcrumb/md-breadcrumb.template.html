@@ -1,0 +1,38 @@
+<section class="md-bc">
+    <div class="md-bc-path" ng-repeat="breadcrumb in MdBreadcrumbCtrl.breadcrumbs track by $index">
+        <div layout="row" layout-align="start center">
+            
+            <md-button class="md-icon-button md-bc-home"
+                       aria-label="Home"
+                       title="Home"
+                       ng-click="MdBreadcrumbCtrl.changeLocation(breadcrumb.path)"
+                       ng-if="$first">
+                 <i class="material-icons">home</i>
+            </md-button>
+        
+            <md-button class=" md-bc-nav"
+                       title="{{breadcrumb.path}}"
+                       ng-click="MdBreadcrumbCtrl.changeLocation(breadcrumb.path)"
+                       ng-if="($middle && !MdBreadcrumbCtrl.isMinimized) || ($middle && MdBreadcrumbCtrl.isMinimized && MdBreadcrumbCtrl.breadcrumbs.length <= 3)  || ($last && !MdBreadcrumbCtrl.showCurrent && $index > 0) ">
+                {{breadcrumb.text}}
+            </md-button>
+            
+            <md-button class=" md-bc-nav"
+                       title="Show all bread crumbs"
+                       ng-if="$index == 1 && MdBreadcrumbCtrl.isMinimized && MdBreadcrumbCtrl.breadcrumbs.length > 3"
+                       ng-click="MdBreadcrumbCtrl.showAllBreadcrumbs()">
+                ...
+            </md-button>
+
+            <div class="md-bc-active-path"
+                 ng-if="$last && MdBreadcrumbCtrl.showCurrent && $index > 0" >
+                {{breadcrumb.text}}
+            </div>
+            
+            <div class="md-bc-separator"
+                 ng-if="($first || ($index == 1 && MdBreadcrumbCtrl.isMinimized && MdBreadcrumbCtrl.breadcrumbs.length > 3) || ($middle && !MdBreadcrumbCtrl.isMinimized) || ($middle && MdBreadcrumbCtrl.isMinimized && MdBreadcrumbCtrl.breadcrumbs.length <= 3) ) &&  !$last">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </div>
+        </div>
+    </div>
+</section>
