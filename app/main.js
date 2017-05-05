@@ -7,15 +7,15 @@
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: '/app/home/home.view.html',
+                templateUrl: '/angular-material-breadcrumb/app/home/home.view.html',
                 controller : 'homeCtrl'
             })
             .when('/example', {
-                templateUrl: '/app/dyn-page/dyn-page.view.html',
+                templateUrl: '/angular-material-breadcrumb/app/dyn-page/dyn-page.view.html',
                 controller : 'dynPageCtrl'
             })
             .when('/example/:path*', {
-                templateUrl: '/app/dyn-page/dyn-page.view.html',
+                templateUrl: '/angular-material-breadcrumb/app/dyn-page/dyn-page.view.html',
                 controller : 'dynPageCtrl'
             })
             /*.otherwise({redirectTo: '/'})*/
